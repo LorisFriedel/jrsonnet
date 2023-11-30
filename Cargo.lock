@@ -711,6 +711,7 @@ dependencies = [
  "jrsonnet-parser",
  "md5",
  "num-bigint",
+ "num-traits",
  "serde",
  "serde_json",
  "serde_yaml_with_quirks",

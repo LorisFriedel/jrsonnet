@@ -18,6 +18,8 @@ legacy-this-file = []
 exp-preserve-order = ["jrsonnet-evaluator/exp-preserve-order"]
 # Bigint type
 exp-bigint = ["num-bigint", "jrsonnet-evaluator/exp-bigint"]
+# SSP FqName generator
+exp-fqname = ["num-bigint", "num-traits"]
 
 exp-null-coaelse = ["jrsonnet-parser/exp-null-coaelse", "jrsonnet-evaluator/exp-null-coaelse"]
 
@@ -48,6 +50,7 @@ serde_json.workspace = true
 serde_yaml_with_quirks.workspace = true
 
 num-bigint = { workspace = true, optional = true }
+num-traits = { version = "0.2.15", optional = true }
 
 [build-dependencies]
 jrsonnet-parser.workspace = true

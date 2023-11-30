@@ -44,6 +44,11 @@ pub use sets::*;
 mod compat;
 pub use compat::*;
 
+#[cfg(feature = "exp-fqname")]
+mod fqname;
+#[cfg(feature = "exp-fqname")]
+pub use fqname::*;
+
 pub fn stdlib_uncached(settings: Rc<RefCell<Settings>>) -> ObjValue {
 	let mut builder = ObjValueBuilder::new();
 
@@ -131,6 +136,8 @@ pub fn stdlib_uncached(settings: Rc<RefCell<Settings>>) -> ObjValue {
 		("sha256", builtin_sha256::INST),
 		("sha512", builtin_sha512::INST),
 		("sha3", builtin_sha3::INST),
+		#[cfg(feature = "exp-fqname")]
+		("fqname", builtin_fqname::INST),
 		// Encoding
 		("encodeUTF8", builtin_encode_utf8::INST),
 		("decodeUTF8", builtin_decode_utf8::INST),

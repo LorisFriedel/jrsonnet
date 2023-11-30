@@ -119,6 +119,7 @@ local names = {
     primitiveEquals: ['x', 'y'],
     native: ['x'],
     md5: ['s'],
+    fqname: ['s', 's', 's', 's', 'x'],
     trace: ['str', 'rest'],
     parseJson: ['str'],
     parseYaml: ['str'],

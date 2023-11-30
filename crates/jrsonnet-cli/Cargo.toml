@@ -16,6 +16,9 @@ exp-bigint = [
     "jrsonnet-evaluator/exp-bigint",
     "jrsonnet-stdlib/exp-bigint",
 ]
+exp-fqname = [
+    "jrsonnet-stdlib/exp-fqname",
+]
 exp-null-coaelse = [
     "jrsonnet-evaluator/exp-null-coaelse",
     "jrsonnet-stdlib/exp-null-coaelse",
